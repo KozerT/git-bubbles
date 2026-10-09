@@ -1,4 +1,5 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+/* Here we keeps all our imports and this files we imports into every index.html */
+@import "./base.css";
+@import "./tokens.css";
+@import "./components/button.css";
+@import "./pages/home.css";
