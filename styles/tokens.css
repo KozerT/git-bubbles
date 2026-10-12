@@ -1,4 +1,64 @@
 :root {
+/* ===== COLOUR VARIABLES ===== */
+
+  /* ===== BRAND COLORS ===== */
+  --color-primary: #447BFF;
+  --color-primary-hover: #2962FF;
+  --color-primary-tint: #DEE9FC;
+  --color-primary-soft: #EFF4FF;
+  --color-secondary: #79D1FD;
+  --color-secondary-soft: #C1E8FF;
+  --color-accent-purple: #5239E5;
+  --color-accent-lavender: #C6BFFF;
+
+
+  /* ===== ACCENT COLORS ===== */
+  --color-accent-pink: #FB7185;
+  --color-accent-lemon: #FCD34D;
+  --color-accent-mint: #34D399;
+  --color-accent-teal-dark: #006687;
+  --color-accent-sky-dark: #004D67;
+  --color-accent-pink-dark: #9F1239;
+
+
+  /* ===== TYPOGRAPHY COLORS ===== */
+  --color-text-main: #121C2A;
+  --color-text-muted: #474555;
+  --color-text-subtle: #727290;
+  --color-text-on-primary: #FDF9FF;
+  --color-text-inverse: #FFFFFF;
+
+
+  /* ===== SURFACE COLORS ===== */
+  --color-bg-page: #F8F9FF;
+  --color-surface-hero: #FFFFFFCC;
+  /* 80% opacity */
+  --color-surface-glass: #FFFFFFB3;
+  /* 70% opacity */
+  --color-surface-tip: #EFF4FFE6;
+  /* 90% opacity */
+  --color-surface-nav: #EFF4FFCC;
+  /* 80% opacity */
+  --color-surface-btn-soft: #DEE9FCB3;
+  /* 70% opacity */
+
+
+  /* ===== TERMINAL COLORS ===== */
+  --color-terminal-bg: #121C2A;
+  --color-terminal-header: #27313F .40;
+  --color-terminal-text: #79D1FD;
+  --color-terminal-output: #C6B8FF;
+
+
+  /* ===== SHADOWS ===== */
+  --shadow-tag: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  --shadow-header: 0px 1px 8px 0px rgba(0, 0, 0, 0.04);
+  --shadow-btn: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --shadow-card: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --shadow-container: 0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 8px 10px -6px rgba(0, 0, 0, 0.1);
+  --shadow-btn-primary: 0px 8px 20px 0px rgba(68, 123, 255, 0.25);
+
+
   /*Here we declare all our variables*/
 --radius-2: 2px;
 --radius-4: 4px;
@@ -11,17 +71,15 @@
 --radius-9999: 9999px;
 
   /* Here we declare all our variables*/
---font-size-11: 0.688rem;
---font-size-12: 0.75rem;
---font-size-14: 0.875rem;
---font-size-16: 1rem;
---font-size-18: 1.125rem;
---font-size-20: 1.25rem;
---font-size-24: 1.5rem;
---font-size-28: 1.75rem;
---font-size-36: 2.25rem;
---font-size-48: 3rem;
---font-size-52: 3.25rem;
+  --font-size-11: 0.688rem;
+  --font-size-12: 0.75rem;
+  --font-size-14: 0.875rem;
+  --font-size-16: 1rem;
+  --font-size-18: 1.125rem;
+  --font-size-20: 1.25rem;
+  --font-size-24: 1.5rem;
+  --font-size-28: 1.75rem;
+  --font-size-36: 2.25rem;
+  --font-size-48: 3rem;
+  --font-size-52: 3.25rem;
 }
-
-
