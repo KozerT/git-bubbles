@@ -23,9 +23,19 @@
   align-items: center;
   justify-content: center;
   padding: 2rem;
+  height: 300px;
+  border: 1px solid black;
+  border-radius: var(--radius-48);
 }
 
 .link-item-test {
   color: blueviolet;
 }
+<<<<<<< HEAD
 
+=======
+.little-furry a {
+  border-radius: var(--radius-48);
+  background-color: blueviolet;
+}
+>>>>>>> 745b0719cefa8c684d63bd516d01d98d96e65621
