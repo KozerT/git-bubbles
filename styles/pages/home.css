@@ -1,0 +1,18 @@
+/* styles for home page goes here */
+
+.header-test {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.link-container-test {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.link-item-test {
+  color: blueviolet;
+}
