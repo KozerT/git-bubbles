@@ -11,8 +11,15 @@
   align-items: center;
   justify-content: center;
   padding: 2rem;
+  height: 300px;
+  border: 1px solid black;
+  border-radius: var(--radius-48);
 }
 
 .link-item-test {
   color: blueviolet;
+}
+.little-furry a {
+  border-radius: var(--radius-48);
+  background-color: blueviolet;
 }
