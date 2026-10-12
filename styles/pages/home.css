@@ -1,7 +1,7 @@
 /* styles for home page goes here */
 
 .header-test {
-  font-size: 3rem;
+  font-size: var(--font-size-36);
   text-align: center;
 }
 
