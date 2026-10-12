@@ -59,6 +59,17 @@
   --shadow-btn-primary: 0px 8px 20px 0px rgba(68, 123, 255, 0.25);
 
 
+  /*Here we declare all our variables*/
+--radius-2: 2px;
+--radius-4: 4px;
+--radius-8: 8px;
+--radius-12: 12px;
+--radius-16: 16px;
+--radius-20: 20px;
+--radius-22 : 22px;
+--radius-48: 48px;
+--radius-9999: 9999px;
+
   /* Here we declare all our variables*/
   --font-size-11: 0.688rem;
   --font-size-12: 0.75rem;
