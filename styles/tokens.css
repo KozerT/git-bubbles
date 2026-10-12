@@ -1,4 +1,70 @@
 :root {
+  /* ===== BRAND COLORS ===== */
+  --color-primary: #447bff;
+  --color-primary-hover: #2962ff;
+  --color-primary-tint: #dee9fc;
+  --color-primary-soft: #eff4ff;
+  --color-secondary: #79d1fd;
+  --color-secondary-soft: #c1e8ff;
+  --color-accent-purple: #5239e5;
+  --color-accent-lavender: #c6bfff;
+
+  /* ===== ACCENT COLORS ===== */
+  --color-accent-pink: #fb7185;
+  --color-accent-lemon: #fcd34d;
+  --color-accent-mint: #34d399;
+  --color-accent-teal-dark: #006687;
+  --color-accent-sky-dark: #004d67;
+  --color-accent-pink-dark: #9f1239;
+
+  /* ===== TYPOGRAPHY COLORS ===== */
+  --color-text-main: #121c2a;
+  --color-text-muted: #474555;
+  --color-text-subtle: #727290;
+  --color-text-on-primary: #fdf9ff;
+  --color-text-inverse: #ffffff;
+
+  /* ===== SURFACE COLORS ===== */
+  --color-bg-page: #f8f9ff;
+  --color-surface-hero: #ffffffcc;
+  /* 80% opacity */
+  --color-surface-glass: #ffffffb3;
+  /* 70% opacity */
+  --color-surface-tip: #eff4ffe6;
+  /* 90% opacity */
+  --color-surface-nav: #eff4ffcc;
+  /* 80% opacity */
+  --color-surface-btn-soft: #dee9fcb3;
+  /* 70% opacity */
+
+  /* ===== TERMINAL COLORS ===== */
+  --color-terminal-bg: #121c2a;
+  --color-terminal-header: #27313f 0.4;
+  --color-terminal-text: #79d1fd;
+  --color-terminal-output: #c6b8ff;
+
+  /* ===== SHADOWS ===== */
+  --shadow-xs: 0px 1px 2px 0px rgba(0, 0, 0, 0.05); /* Tags, inline code chips, tiny pills*/
+  --shadow-bar: 0px 1px 8px 0px rgba(0, 0, 0, 0.04); /* Sticky site header & footer bars */
+  --shadow-md:
+    0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -2px rgba(0, 0, 0, 0.1); /* Buttons, nav pill, small cards  */
+  --shadow-lg:
+    0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1); /* Feature cards, tip cards */
+  --shadow-xl:
+    0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 8px 10px -6px rgba(0, 0, 0, 0.1); /* Hero panel, terminal / code block window */
+  --shadow-primary-glow: box-shadow: 0px 8px 20px 0px rgba(68, 123, 255, 0.25); /* Primary CTA blue glow */
+
+  /*Here we declare all our variables*/
+  --radius-2: 2px;
+  --radius-4: 4px;
+  --radius-8: 8px;
+  --radius-12: 12px;
+  --radius-16: 16px;
+  --radius-20: 20px;
+  --radius-22: 22px;
+  --radius-48: 48px;
+  --radius-9999: 9999px;
+
   /* Here we declare all our variables*/
   --font-size-11: 0.688rem;
   --font-size-12: 0.75rem;
@@ -11,14 +77,4 @@
   --font-size-36: 2.25rem;
   --font-size-48: 3rem;
   --font-size-52: 3.25rem;
-
-  --shadow-xs: 0px 1px 2px 0px rgba(0, 0, 0, 0.05); /* Tags, inline code chips, tiny pills*/
-  --shadow-bar: 0px 1px 8px 0px rgba(0, 0, 0, 0.04); /* Sticky site header & footer bars */
-  --shadow-md:
-    0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -2px rgba(0, 0, 0, 0.1); /* Buttons, nav pill, small cards  */
-  --shadow-lg:
-    0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1); /* Feature cards, tip cards */
-  --shadow-xl:
-    0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 8px 10px -6px rgba(0, 0, 0, 0.1); /* Hero panel, terminal / code block window */
-  --shadow-primary-glow: box-shadow: 0px 8px 20px 0px rgba(68, 123, 255, 0.25); /* Primary CTA blue glow */
 }

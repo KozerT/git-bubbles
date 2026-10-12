@@ -3,6 +3,7 @@
 .header-test {
   font-size: var(--font-size-36);
   text-align: center;
+  font-family: "Nunito Sans", monospace;
 }
 
 .link-container-test {
@@ -11,10 +12,16 @@
   align-items: center;
   justify-content: center;
   padding: 2rem;
+  height: 300px;
   border: 1px solid black;
-  box-shadow: var(--shadow-lg);
+  border-radius: var(--radius-48);
 }
 
 .link-item-test {
   color: blueviolet;
+}
+
+.little-furry a {
+  border-radius: var(--radius-48);
+  background-color: blueviolet;
 }
