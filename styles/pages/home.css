@@ -11,6 +11,8 @@
   align-items: center;
   justify-content: center;
   padding: 2rem;
+  border: 1px solid black;
+  box-shadow: var(--shadow-lg);
 }
 
 .link-item-test {
