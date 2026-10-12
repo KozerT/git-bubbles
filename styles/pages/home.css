@@ -3,18 +3,7 @@
 .header-test {
   font-size: var(--font-size-36);
   text-align: center;
-  font-family: "nunito sans", monospace;
-  
-}.header-test {
-  font-size: var(--font-size-36);
-  text-align: center;
-  font-family: "firacode", monospace;
-  
-}.header-test {
-  font-size: var(--font-size-36);
-  text-align: center;
-  font-family: "quicksand", monospace;
-  
+  font-family: "Nunito Sans", monospace;
 }
 
 .link-container-test {
@@ -31,11 +20,8 @@
 .link-item-test {
   color: blueviolet;
 }
-<<<<<<< HEAD
 
-=======
 .little-furry a {
   border-radius: var(--radius-48);
   background-color: blueviolet;
 }
->>>>>>> 745b0719cefa8c684d63bd516d01d98d96e65621
