@@ -41,9 +41,9 @@
   border-radius: var(--radius-9999);
   background-color: var(--color-text-main);
   transition:
-    translate 160ms ease,
-    rotate 160ms ease,
-    opacity 160ms ease;
+    translate var(--transition-main),
+    rotate var(--transition-main),
+    opacity var(--transition-main);
 }
 
 /* TODO: add transition to tokens */
@@ -64,10 +64,10 @@
   translate: 0 -8px;
   /* allow-discrete - makes the closing animation possible. Without it browser hides menu immediately */
   transition:
-    opacity 160ms ease,
-    translate 160ms ease,
-    display 160ms ease allow-discrete,
-    overlay 160ms ease allow-discrete;
+    opacity var(--transition-main),
+    translate var(--transition-main),
+    display var(--transition-main) allow-discrete,
+    overlay var(--transition-main) allow-discrete;
 }
 
 @starting-style {
@@ -110,8 +110,8 @@
   text-transform: capitalize;
   white-space: nowrap;
   transition:
-    background-color 160ms ease,
-    color 160ms ease;
+    background-color var(--transition-main),
+    color var(--transition-main);
 
   &:hover {
     background-color: var(--color-primary-tint);
