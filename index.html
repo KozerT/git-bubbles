@@ -14,19 +14,52 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__bar header__container">
-        <a href="#main">
+      <div class="header__bar">
+        <a href="index.html" class="logo">
           <img
             src="./assets/images/logo.png"
-            alt="Git-bubbles text and octocat-baby mascot"
+            alt="Git Bubbles baby-octocat mascot logo"
+            class="logo__image"
+            width="32"
+            height="auto"
           />
+          Git Bubbles
         </a>
-        <nav class="nav">
-          <a href="#main" class="nav__link nav--link__active">home</a>
-          <a href="./projects/">projects</a>
-          <a href="">changes</a>
-          <a href="">branching</a>
-          <a href="">about-us</a>
+        <button
+          class="menu-toggle"
+          type="button"
+          popovertarget="header-menu"
+          aria-controls="header-menu"
+        >
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+        </button>
+
+        <nav class="header-menu" id="header-menu" popover>
+          <!-- Important: we have a aria-current="page" here, and this is needed for our custom style work  -->
+          <a href="index.html" class="header-menu__link" aria-current="page">
+            home</a
+          >
+          <a href="./projects/index.html" class="header-menu__link">projects</a>
+          <a href="./changes/index.html" class="header-menu__link">changes</a>
+          <a href="./branching/index.html" class="header-menu__link"
+            >branching</a
+          >
+          <a href="./about-us/index.html" class="header-menu__link">about-us</a>
+        </nav>
+
+        <nav class="header-nav">
+          <!-- Important: we have  aria-current="page" here, and this is needed for our background style works  -->
+          <a href="index.html" class="header-nav__link" aria-current="page"
+            >home</a
+          >
+          <a href="./projects/index.html" class="header-nav__link">projects</a>
+          <a href="./changes/index.html" class="header-nav__link">changes</a>
+          <a href="./branching/index.html" class="header-nav__link"
+            >branching</a
+          >
+          <a href="./about-us/index.html" class="header-nav__link">about us</a>
         </nav>
       </div>
     </header>
