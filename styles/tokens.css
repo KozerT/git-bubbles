@@ -101,4 +101,6 @@
   --space-96: 6rem; /* 96px */
 
   --layout-max: 68.75rem; /* 1100px page width */
+
+  --transition-main: 160ms ease;
 }
