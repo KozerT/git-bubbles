@@ -1,27 +1,27 @@
 /* styles for home page goes here */
 
-.header-test {
-  font-size: var(--font-size-36);
-  text-align: center;
-  font-family: "Nunito Sans", monospace;
-}
-
-.link-container-test {
+.home-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  height: 300px;
-  border: 1px solid black;
-  border-radius: var(--radius-48);
+  flex: 1;
+  gap: var(--space-40);
+  margin: auto;
+  padding: var(--space-40) var(--space-32);
+  max-width: var(--layout-max);
 }
 
-.link-item-test {
-  color: blueviolet;
+.hero-card {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: var(--space-24);
+  padding: var(--space-32) var(--space-24);
+  background-color: var(--color-surface-hero);
+  box-shadow: var(--shadow-xl);
+  border-radius: var(--radius-32);
 }
 
-.little-furry a {
-  border-radius: var(--radius-48);
-  background-color: blueviolet;
+@media (min-width: 768px) {
+  .hero-card {
+    border-radius: var(--radius-48);
+  }
 }

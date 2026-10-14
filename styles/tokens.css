@@ -52,7 +52,7 @@
     0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1); /* Feature cards, tip cards */
   --shadow-xl:
     0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 8px 10px -6px rgba(0, 0, 0, 0.1); /* Hero panel, terminal / code block window */
-  --shadow-primary-glow: box-shadow: 0px 8px 20px 0px rgba(68, 123, 255, 0.25); /* Primary CTA blue glow */
+  --shadow-primary-glow: 0px 8px 20px 0px rgba(68, 123, 255, 0.25); /* Primary CTA blue glow */
 
   /*Here we declare all our variables*/
   --radius-2: 2px;
@@ -62,6 +62,7 @@
   --radius-16: 16px;
   --radius-20: 20px;
   --radius-22: 22px;
+  --radius-32: 32px;
   --radius-48: 48px;
   --radius-9999: 9999px;
 
@@ -98,4 +99,6 @@
   --space-80: 5rem; /* 80px  */
   --space-90: 5.625rem; /* 90px  */
   --space-96: 6rem; /* 96px */
+
+  --layout-max: 68.75rem; /* 1100px page width */
 }

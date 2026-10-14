@@ -1,0 +1,14 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-8);
+  padding: var(--space-6) var(--space-16);
+  border-radius: var(--radius-9999);
+  box-shadow: var(--shadow-xs);
+  background-color: var(--color-secondary-soft);
+  color: var(--color-accent-teal-dark);
+  font-family: "Quicksand", system-ui, sans-serif;
+  font-size: var(--font-size-14);
+  font-weight: 700;
+  white-space: nowrap;
+}
