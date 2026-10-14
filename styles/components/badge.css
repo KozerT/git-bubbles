@@ -1,3 +1,4 @@
+.text-badge,
 .badge {
   display: inline-flex;
   align-items: center;
@@ -11,4 +12,25 @@
   font-size: var(--font-size-14);
   font-weight: 700;
   white-space: nowrap;
+}
+
+.text-badge {
+  padding: var(--space-4) var(--space-12);
+  font-size: var(--font-size-12);
+}
+
+.badge__lavender {
+  /* Here I am using relative colors, so like that we stick with our design tokens */
+  background-color: rgb(from var(--color-accent-lavender) r g b / 30%);
+  color: var(--color-accent-purple);
+}
+
+.badge__pink {
+  background-color: rgb(from var(--color-accent-pink) r g b / 30%);
+  color: var(--color-accent-pink-dark);
+}
+
+.badge__mint {
+  background-color: rgb(from var(--color-accent-mint) r g b / 30%);
+  color: var(--color-accent-teal-dark);
 }
