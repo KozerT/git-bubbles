@@ -1,22 +1,36 @@
-/* styles for branching page goes here */
 
 .branching-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 40px;
-    max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  padding: var(--space-20);
+  max-width: 500px;
 }
-.branching-title,
-p.begining,
-p.start,
-p.yes,
-p.first,
-p.start-here,
-p.from-here {
-    text-align: left;
-    font-family: "Quicksand", sans-serif;
+.branching-title {
+  font-size: var(--font-size-24);
+  color: var(--color-text-main);
+  font-weight: 700;
+  font-family: "Quicksand", sans-serif;
+  margin-top: var(--space-20);
+  margin-bottom: var(--space-12);
+}
+.branching-text {
+  font-size: var(--font-size-16);
+  color: var(--color-text-muted);
+  font-family: "Nunito Sans", sans-serif;
+  margin-bottom: var(--space-16);
+}
+.branching-highlight {
+  font-size: var(--font-size-16);
+  color: var(--color-text-main);
+  font-weight: 700;
+  font-family: "Nunito Sans", sans-serif;
+  margin-bottom: var(--space-16);
+}
+.branching-code {
+  font-family: "Fira Code", monospace;
+  color: var(--color-text-main);
 }
 .body {
   background-color: var(--color-bg-page);
@@ -25,28 +39,6 @@ p.from-here {
   line-height: 1.6;
   font-family: "Nunito Sans", sans-serif;
 }
-
-.branching-title {
-  font-size: var(--font-size-36);
-  color: var(--color-text-main);
-  font-weight: 700;
-  margin-top: var(--space-32);
-  margin-bottom: var(--space-16);
-  margin-top: var(--space-32);
-  font-family: "Quicksand", sans-serif;
-}
-
-.branching-main p {
-  font-size: var(--font-size-16);
-  color: var(--color-text-muted);
-  margin-bottom: var(--space-16);
-}
-
-.branching-main .begining {
-  font-size: var(--font-size-16);
-  color: var(--color-text-main);
-}
-
 .article-one,
 .article-two,
 .article-three,
@@ -59,19 +51,16 @@ p.from-here {
   box-shadow: var(--shadow-md);
   margin-top: var(--space-20);
 }
-p.begining,
-p.start,
-p.yes,
-p.first,
-p.start-here,
-p.from-here {
-    font-weight: 700;
-}
-@media (max-width: 768px) {
-  .branching-main h2,
+
+@media (min-width: 768px) {
+  .branching-main {
+    padding: var(--space-40);
+    max-width: 680px;
+  }
+
   .branching-title {
-    font-size: var(--font-size-20);
-    margin-top: var(--space-20);
-    margin-bottom: var(--space-12);
+    font-size: var(--font-size-36);
+    margin-top: var(--space-32);
+    margin-bottom: var(--space-16);
   }
 }
