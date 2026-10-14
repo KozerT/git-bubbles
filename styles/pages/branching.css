@@ -1,8 +1,6 @@
 /* styles for branching page goes here */
-* {
-    box-sizing: border-box;
-}
-main {
+
+.branching-main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,32 +8,41 @@ main {
     padding: 40px;
     max-width: 500px;
 }
-p, h2 {
+.branching-title,
+p.begining,
+p.start,
+p.yes,
+p.first,
+p.start-here,
+p.from-here {
     text-align: left;
+    font-family: "Quicksand", sans-serif;
 }
-body {
+.body {
   background-color: var(--color-bg-page);
   color: var(--color-text-main);
   font-size: var(--font-size-16);
   line-height: 1.6;
+  font-family: "Nunito Sans", sans-serif;
 }
 
-main h2 {
-  font-size: var(--font-size-52);
+.branching-title {
+  font-size: var(--font-size-36);
   color: var(--color-text-main);
   font-weight: 700;
   margin-top: var(--space-32);
   margin-bottom: var(--space-16);
   margin-top: var(--space-32);
+  font-family: "Quicksand", sans-serif;
 }
 
-main p {
+.branching-main p {
   font-size: var(--font-size-16);
   color: var(--color-text-muted);
   margin-bottom: var(--space-16);
 }
 
-main .begining {
+.branching-main .begining {
   font-size: var(--font-size-16);
   color: var(--color-text-main);
 }
@@ -59,4 +66,12 @@ p.first,
 p.start-here,
 p.from-here {
     font-weight: 700;
+}
+@media (max-width: 768px) {
+  .branching-main h2,
+  .branching-title {
+    font-size: var(--font-size-20);
+    margin-top: var(--space-20);
+    margin-bottom: var(--space-12);
+  }
 }
