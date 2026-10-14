@@ -21,7 +21,7 @@ body {
 }
 
 main h2 {
-  font-size: var(--font-size-28);
+  font-size: var(--font-size-52);
   color: var(--color-text-main);
   font-weight: 700;
   margin-top: var(--space-32);
@@ -51,4 +51,12 @@ main .begining {
   border-radius: var(--radius-12);
   box-shadow: var(--shadow-md);
   margin-top: var(--space-20);
+}
+p.begining,
+p.start,
+p.yes,
+p.first,
+p.start-here,
+p.from-here {
+    font-weight: 700;
 }
