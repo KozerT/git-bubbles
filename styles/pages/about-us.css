@@ -1,1 +1,9 @@
-/* styles for about us page goes here */
+.about-background {
+  background-color: var(--color-bg-page);
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  padding-inline: var(--space-32);
+}
