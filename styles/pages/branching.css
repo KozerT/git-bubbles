@@ -1,0 +1,58 @@
+/* styles for branching page goes here */
+* {
+    box-sizing: border-box;
+}
+header h2 {
+    color: var(--color-text-main, #121c2a);
+    margin-bottom: 20px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 40px;
+    max-width: 500px;
+}
+p, h2 {
+    text-align: left;
+}
+body {
+  background-color: var(--color-bg-page);
+  color: var(--color-text-main);
+  font-size: var(--font-size-16);
+  line-height: 1.6;
+}
+
+main h2 {
+  font-size: var(--font-size-28);
+  color: var(--color-text-main);
+  font-weight: 700;
+  margin-top: var(--space-32);
+  margin-bottom: var(--space-16);
+  margin-top: var(--space-32);
+}
+
+main p {
+  font-size: var(--font-size-16);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-16);
+}
+
+main .begining {
+  font-size: var(--font-size-16);
+  color: var(--color-text-main);
+}
+
+.article-one,
+.article-two,
+.article-three,
+.article-four,
+.article-five,
+.article-six {
+  background-color: #ffffff;
+  padding: var(--space-24);
+  border-radius: var(--radius-12);
+  box-shadow: var(--shadow-md);
+  margin-top: var(--space-20);
+}
