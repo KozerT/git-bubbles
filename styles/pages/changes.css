@@ -1,3 +1,6 @@
+.changes-page {
+  padding: 0 var(--space-16);
+}
 /* CHANGES PAGE ARTICLE */
 
 .changes-article {
@@ -16,18 +19,21 @@
 /* INTRODUCTION */
 
 .changes-intro {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-20);
     width: 100%;
 }
 
-.changes-intro h1 {
+.changes-title {
     width: 100%;
     margin: 0;
     padding: var(--space-4) 0 0;
 
     font-family: "Quicksand", sans-serif;
-    font-size: var(--font-size-48);
+    font-size: var(--font-size-36);
     font-weight: 700;
-    line-height: 3.5rem;
+    line-height: 2.75rem;
     letter-spacing: -0.06rem;
 
     color: var(--color-text-main);
@@ -39,9 +45,9 @@
     margin: 0;
 
     font-family: "Nunito Sans", sans-serif;
-    font-size: var(--font-size-18);
+    font-size: var(--font-size-16);
     font-weight: 500;
-    line-height: 1.83125rem;
+    line-height: 1.625rem;
     letter-spacing: 0;
 
     color: var(--color-text-muted);
@@ -98,22 +104,19 @@
 
 /* LESSON SECTION HEADINGS */
 
-.changes-section h2 {
-    margin: 0;
-
-    font-family: "Quicksand", sans-serif;
-    font-size: var(--font-size-24);
-    font-weight: 600;
-    line-height: 2rem;
-    letter-spacing: -0.0375rem;
-
-    color: var(--color-text-main);
+.changes-section-title {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  font-size: var(--font-size-20);
+  font-weight: 600;
+  line-height: 1.75rem;
+  letter-spacing: -0.0375rem;
+  color: var(--color-text-main);
 }
-
 
 /* LESSON SECTION PARAGRAPHS */
 
-.changes-section p {
+.changes-section-text{
     margin: 0;
 
     font-family: "Nunito Sans", sans-serif;
@@ -181,7 +184,7 @@
   font-family: "Fira Code", monospace;
   font-size: var(--font-size-14);
   color: var(--color-terminal-text);
-
+  overflow-x: auto;
   white-space: pre-wrap;
   overflow-wrap: anywhere;
 }
@@ -256,6 +259,7 @@
   justify-content: space-between;
   align-items: center;
   gap: var(--space-16);
+  flex-wrap: wrap;
 
   width: 100%;
   padding: var(--space-20) 0;
@@ -299,7 +303,7 @@
   box-shadow: var(--shadow-primary-glow);
 
   font-family: "Quicksand", sans-serif;
-  font-size: var(--font-size-16);
+  font-size: var(--font-size-14);
   font-weight: 700;
   text-decoration: none;
   white-space: nowrap;
@@ -311,36 +315,34 @@
 
 /*  RESPONSIVE LAYOUT */
 
-@media (max-width: 600px) {
+
+/* RESPONSIVE LAYOUT - DESKTOP */
+
+@media (min-width: 768px) {
   .changes-page {
-    padding: 0 var(--space-16);
+    padding: 0;
   }
 
-  .changes-intro h1 {
-    font-size: var(--font-size-36);
-    line-height: 2.75rem;
+  .changes-title {
+    font-size: var(--font-size-48);
+    line-height: 3.5rem;
   }
 
   .changes-intro p {
-    font-size: var(--font-size-16);
-    line-height: 1.625rem;
+    font-size: var(--font-size-18);
+    line-height: 1.83125rem;
   }
 
-  .changes-section h2 {
-    font-size: var(--font-size-20);
-    line-height: 1.75rem;
-  }
-
-  .changes-terminal pre {
-    overflow-x: auto;
+  .changes-section-title {
+    font-size: var(--font-size-24);
+    line-height: 2rem;
   }
 
   .changes-bottom {
-    flex-wrap: wrap;
-    gap: var(--space-16);
+    flex-wrap: nowrap;
   }
 
   .changes-next {
-    font-size: var(--font-size-14);
+    font-size: var(--font-size-16);
   }
 }

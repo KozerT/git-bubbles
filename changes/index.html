@@ -15,6 +15,7 @@
 
 <body>
   <header>Header</header>
+
   <main class="changes-page">
     <article class="changes-article">
 
@@ -23,12 +24,12 @@
 
         <div class="changes-step-container">
           <span class="changes-step">
-            <img class="changes-step-icon" src="../assets/images/baby_image.png" alt="" />
+            <img class="changes-step-icon" src="../assets/images/baby_image.png" alt="" width="20" height="20" />>
             <span>Step 2: Changes</span>
           </span>
         </div>
 
-        <h1>Adding Changes in Git</h1>
+        <h1 class="changes-title">Adding Changes in Git</h1>
 
         <p>
           Imagine building something with LEGO blocks. You add new pieces,
@@ -52,18 +53,17 @@
         </p>
 
       </header>
+
       <!-- ===== SECTION 1: CHECKING CHANGES ===== -->
-
       <section class="changes-section">
-        <h2>1. How to check our changes</h2>
+        <h2 class="changes-section-title">1. How to check our changes</h2>
 
-        <p>
-          Before saving our work, we can check which files have changed.
+        <p class="changes-section-text">
+          Git status helps you see which files have changed.
         </p>
 
-        <p>
+        <p class="changes-section-text">
           This shows which files are new, modified or ready to be saved.
-          Think of it like checking our schoolbag to see what we have packed.
         </p>
 
         <div class="changes-terminal">
@@ -79,101 +79,100 @@
   <span class="terminal-error">drawing.svg</span>
 </code></pre>
         </div>
-        <!-- ===== SECTION 2: ADDING CHANGES ===== -->
+      </section>
 
-        <section class="changes-section">
-          <h2>2. How to add our changes</h2>
+      <!-- ===== SECTION 2: ADDING CHANGES ===== -->
+      <section class="changes-section">
+        <h2 class="changes-section-title">2. How to add our changes</h2>
 
-          <p>
-            After checking our changes, we need to choose which files
-            we want Git to include in our next snapshot.
-          </p>
+        <p class="changes-section-text">
+          After checking our changes, we need to choose which files
+          we want Git to include in our next snapshot.
+        </p>
 
-          <p>
-            This is called staging. Think of it like choosing which
-            LEGO pieces you want to include in a photograph.
-          </p>
+        <p class="changes-section-text">
+          This is called staging. Think of it like choosing which
+          LEGO pieces you want to include in a photograph.
+        </p>
 
-          <div class="changes-terminal">
-            <div class="changes-terminal-header">
-              <span class="terminal-dot red"></span>
-              <span class="terminal-dot yellow"></span>
-              <span class="terminal-dot green"></span>
-            </div>
+        <div class="changes-terminal">
+          <div class="changes-terminal-header">
+            <span class="terminal-dot red"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot green"></span>
+          </div>
 
-            <pre><code><span class="terminal-comment"># Add all changes</span>
+          <pre><code><span class="terminal-comment"># Add all changes</span>
 <span class="terminal-command">git add .</span>
 
 <span class="terminal-comment"># Or add one specific file</span>
 <span class="terminal-command">git add index.html</span></code></pre>
+        </div>
+      </section>
+
+      <!-- ===== SECTION 3: COMMITTING CHANGES ===== -->
+      <section class="changes-section">
+        <h2 class="changes-section-title">3. How to save our changes</h2>
+
+        <p class="changes-section-text">
+          Once we have staged our changes, we can save them
+          by creating a commit.
+        </p>
+
+        <p class="changes-section-text">
+          Think of a commit as taking a photograph of your LEGO creation.
+          Each commit records a snapshot of your project, along with
+          a message explaining what changed.
+        </p>
+
+        <div class="changes-terminal">
+          <div class="changes-terminal-header">
+            <span class="terminal-dot red"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot green"></span>
           </div>
-          <!-- ===== SECTION 3: COMMITTING CHANGES ===== -->
 
-          <section class="changes-section">
-            <h2>3. How to save our changes</h2>
-
-            <p>
-              Once we have staged our changes, we can save them
-              by creating a commit.
-            </p>
-
-            <p>
-              Think of a commit as taking a photograph of your LEGO creation.
-              Each commit records a snapshot of your project, along with
-              a message explaining what changed.
-            </p>
-
-            <div class="changes-terminal">
-              <div class="changes-terminal-header">
-                <span class="terminal-dot red"></span>
-                <span class="terminal-dot yellow"></span>
-                <span class="terminal-dot green"></span>
-              </div>
-
-              <pre><code><span class="terminal-comment"># Save your staged changes with a message</span>
+          <pre><code><span class="terminal-comment"># Save your staged changes with a message</span>
 <span class="terminal-command">git commit -m "Update homepage"</span></code></pre>
-            </div>
-          </section>
-        </section>
+        </div>
       </section>
 
       <!-- ===== SECTION 4: OTHER USEFUL GIT COMMANDS ===== -->
-
       <section class="changes-section">
-        <h2>4. Other useful Git commands</h2>
+        <h2 class="changes-section-title">4. Other useful Git commands</h2>
 
-        <p>
+        <p class="changes-section-text">
           Git has a few more helpful commands that make it easier
           to understand, share, and manage our changes.
         </p>
 
-        <p>
+        <p class="changes-section-text">
           <strong><code>git diff</code></strong> —
           Shows the changes in your files that have not been staged yet.
         </p>
 
-        <p>
+        <p class="changes-section-text">
           <strong><code>git diff --staged</code></strong> —
           Shows the changes you have already staged for your next commit.
         </p>
 
-        <p>
+        <p class="changes-section-text">
           <strong><code>git push</code></strong> —
           Sends your local commits to a remote repository, such as GitHub.
         </p>
 
-        <p>
+        <p class="changes-section-text">
           <strong><code>git pull</code></strong> —
           Gets changes from a remote repository and integrates them
           into your current branch.
         </p>
 
-        <p>
+        <p class="changes-section-text">
           <strong><code>git log</code></strong> —
           Shows the history of commits in your project.
         </p>
 
-        <p>
+        <p class="changes-section-text">
           <strong><code>git restore --staged index.html</code></strong> —
           Removes index.html from the staging area without deleting
           your changes in the file.
@@ -181,10 +180,9 @@
       </section>
 
       <!-- ===== NURSERY TIP ===== -->
-
-      <aside class="changes-tip">
+      <div class="changes-tip">
         <span class="changes-tip-icon" aria-hidden="true">
-          <img src="../assets/images/nursery tips_bottle.png" alt="" />
+          <img src="../assets/images/nursery tips_bottle.png" alt="" width="20" height="28" />
         </span>
 
         <div class="changes-tip-content">
@@ -194,14 +192,14 @@
             them locally, and git push sends your commits to GitHub.
           </p>
         </div>
-      </aside>
+      </div>
 
       <!-- ===== BOTTOM NAVIGATION ===== -->
-
       <nav class="changes-bottom" aria-label="Lesson navigation">
 
         <div class="changes-complete">
-          <img class="changes-complete-icon" src="../assets/images/done_icon_bottom_navigation.png" alt="" />
+          <img class="changes-complete-icon" src="../assets/images/done_icon_bottom_navigation.png" alt="" width="18"
+            height="18" />
           <span>Chapter 2 Complete</span>
         </div>
 
@@ -212,9 +210,9 @@
 
       </nav>
 
-
     </article>
   </main>
+
   <footer>Footer</footer>
 </body>
 
