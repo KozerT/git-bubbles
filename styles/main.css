@@ -2,6 +2,8 @@
 @import "./base.css";
 
 @import "./components/button.css";
+@import "./components/badge.css";
+@import "./components/cards.css";
 
 @import "./pages/home.css";
 @import "./pages/about-us.css";

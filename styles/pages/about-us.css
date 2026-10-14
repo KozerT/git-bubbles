@@ -7,3 +7,22 @@
   flex-direction: column;
   padding-inline: var(--space-32);
 }
+
+.about-header {
+  display: flex;
+}
+
+.about-header__title {
+  font-size: var(--font-size-36);
+  font-family: "Quicksand", system-ui, sans-serif;
+  font-weight: 700;
+  text-wrap: balance;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+.about-header__subtitle {
+}
+
+.text-italic {
+}
