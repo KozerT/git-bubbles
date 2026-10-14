@@ -38,6 +38,6 @@
 
   &:hover {
     background-color: var(--color-primary-tint);
-    box-shadow: var(--shadow-primary-glow);
+    box-shadow: var(--shadow-md);
   }
 }
