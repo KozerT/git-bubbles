@@ -2,7 +2,7 @@
 * {
     box-sizing: border-box;
 }
-header h2 {
+main h2 {
     color: var(--color-text-main, #121c2a);
     margin-bottom: 20px;
 }
