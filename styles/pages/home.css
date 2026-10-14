@@ -76,6 +76,7 @@
 .feature-card__text {
   font-family: "Nunito Sans", system-ui, sans-serif;
   font-size: var(--font-size-16);
+  text-wrap: balance;
 }
 
 .feature-card__link {
