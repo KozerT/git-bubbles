@@ -34,3 +34,39 @@
   background-color: rgb(from var(--color-accent-mint) r g b / 30%);
   color: var(--color-accent-teal-dark);
 }
+
+.badge-tip {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-20);
+  padding: var(--space-32);
+  background-color: var(--color-surface-tip);
+  border-radius: var(--radius-48);
+  box-shadow: var(--shadow-md);
+
+  .badge-tip__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-9999);
+    width: var(--space-48);
+    aspect-ratio: 1;
+    background-color: var(--color-secondary-soft);
+    box-shadow: var(--shadow-xs);
+    font-size: var(--font-size-20);
+  }
+
+  .badge-tip__title {
+    font-family: "Quicksand", system-ui, sans-serif;
+    font-size: var(--font-size-20);
+    font-weight: 600;
+    color: var(--color-text-main);
+    margin-bottom: var(--space-4);
+  }
+
+  .badge-tip__text {
+    font-family: "Nunito Sans", system-ui, sans-serif;
+    font-size: var(--font-size-16);
+    color: var(--color-text-muted);
+  }
+}
