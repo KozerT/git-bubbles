@@ -4,14 +4,107 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crew behind the Git Bubbles project</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Nunito+Sans:wght@300..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Nunito+Sans:wght@300..700&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/main.css" />
   </head>
   <body>
     <header>Header</header>
-    <main>Main Content for About Us page</main>
+    <main class="about-background">
+      <div class="about-container">
+        <section class="about-header">
+          <p class="badge"><span>👶</span> Step 4: About Us</p>
+          <h1 class="about-header__title">Meet the Crew</h1>
+          <p class="about-header__subtitle">
+            Four coders who once typed
+            <span class="text-italic">- git push</span> and cried a little.
+          </p>
+        </section>
+
+        <section class="about-team card-grid">
+          <article class="card team-card">
+            <img
+              src="../assets/images/octocat-swagatika.png"
+              alt="Swagatika octocat avatar"
+              class="team-card__avatar"
+              height="100%"
+              width="auto"
+            />
+            <div class="team-card__body">
+              <h2 class="team-card__name">Swagatika</h2>
+            </div>
+          </article>
+          <article class="card team-card">
+            <img
+              src="../assets/images/octocat-sydney.png"
+              alt="Sydney octocat avatar"
+              class="team-card__avatar"
+              height="100%"
+              width="auto"
+            />
+            <div class="team-card__body">
+              <h2 class="team-card__name">Sydney</h2>
+            </div>
+          </article>
+          <article class="card team-card">
+            <img
+              src="../assets/images/octocat-soma.png"
+              alt="Soma octocat avatar"
+              class="team-card__avatar"
+              height="100%"
+              width="auto"
+            />
+            <div class="team-card__body">
+              <h2 class="team-card__name">Soma</h2>
+            </div>
+          </article>
+          <article class="card team-card">
+            <img
+              src="../assets/images/octocat-tetiana.png"
+              alt="Tanya octocat avatar"
+              class="team-card__avatar"
+              height="100%"
+              width="auto"
+            />
+            <div class="team-card__body">
+              <h2 class="team-card__name">Tanya</h2>
+            </div>
+          </article>
+        </section>
+        <p class="team-credit">
+          Our avatars were built with
+          <a
+            href="https://myoctocat.com/build-your-octocat/"
+            class="team-credit__link"
+            >GitHub's Octocat builder</a
+          >. Go make your own!
+        </p>
+        <section class="bottom-banner">
+          <p class="bottom-banner__status">
+            <img
+              src="../assets/images/status-icon.svg"
+              alt="status icon"
+              height="100%"
+              width="auto"
+              class="status-icon"
+            />
+            Chapter 4 Complete 🥳
+          </p>
+          <a href="../index.html" class="button button-primary"
+            >Back to Home
+            <img
+              src="../assets/images/arrow-right.png"
+              alt="arrow-right"
+              width="14"
+              height="14"
+          /></a>
+        </section>
+      </div>
+    </main>
     <footer>Footer</footer>
   </body>
 </html>
