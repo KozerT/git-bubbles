@@ -39,9 +39,10 @@
 
   /* ===== TERMINAL COLORS ===== */
   --color-terminal-bg: #121c2a;
-  --color-terminal-header: #27313f 0.4;
+  --color-terminal-header: rgb(39 49 63 / 40%);
   --color-terminal-text: #79d1fd;
   --color-terminal-output: #c6b8ff;
+  --color-terminal-error:#FB7185;
 
   /* ===== SHADOWS ===== */
   --shadow-xs: 0px 1px 2px 0px rgba(0, 0, 0, 0.05); /* Tags, inline code chips, tiny pills*/
