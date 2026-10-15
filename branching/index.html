@@ -7,11 +7,112 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Nunito+Sans:wght@300..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="./styles/main.css" />
+     <link rel="stylesheet" href="../styles/main.css"/>
   </head>
-  <body>
+  <body class="branching-body">
     <header>Header</header>
-    <main>Main Content for Branching page</main>
+    <main class="branching-main">
+      <h1 class="branching-title">Hi hi, little coder! Let’s learn about Git together! <span aria-hidden="true">🍼✨</span></h1>
+      <article class="article-one">
+        <h2 class="branching-highlight">Today, we are going to look at why we make little side-paths in our toy box, and how we hop between them!</h2>
+
+<p class="branching-text">Why We Need Branching?</p>
+
+Imagine you built a huge, super-duper tall sandcastle in the middle of the sandbox. Everyone in the playground can see it! It is perfect.
+Now, what if you want to add a shiny purple-red laser cannon to the top of your sandcastle, but you aren't sure if it will make the whole thing fall over splash into the dirt? 😱 You don't want to break the main castle that everyone loves! So, what do you do? You grab a little bucket, step one inch to the left, and build a mini-sandbox all for yourself. This mini-sandbox is your Branch! 🏖️
+You can put the laser cannon on your mini-castle. If it falls down and goes boom, the main castle is totally safe! Whew!
+If the laser cannon looks super cool, you can gently pick it up and walk it over to join the main castle.
+That is why a branch is so great! It is your very own safe playground to try silly ideas without making a mess of the main toys. 🧸</p>
+      </article>
+      <article class="article-two">
+        <h2 class="branching-highlight">Oh, let's talk about git checkout! 🧸</h2>
+        <p class="branching-text">Let's look at what it really means and how it works like putting on your favorite shoes!</p>
+
+<p class="branching-text">What is git checkout?</p>
+
+<p class="branching-text">Imagine you have two pairs of shoes sitting by the door: Your everyday sneakers (main). Your silly dinosaur slippers (funny-hats)
+You can't wear both at the exact same time, right? You have to pick one pair, take them off, and put on the other pair to walk into a different room.
+
+When you type git checkout, you are telling Git:
+
+"Please take off my current shoes, put on these new shoes, and walk me over to that other toy box!" 👟
+What does it do?
+Depending on how you use it, git checkout does two main magic tricks:
+
+Hop to a different sandbox (Branch Hopping!):
+If you type git checkout funny-hats, you are teleporting yourself right into your mini-sandbox toy box. Your computer screen updates to show only the toys in that box!
+
+Time Travel to an old toy (Commit Hopping!):
+Remember how a commit is like taking a snapshot photo of your toys? If you type git checkout plus a special photo number, Git will temporarily pack up the room to look exactly like it did when you took that photo yesterday! 📸
+
+(Baby tip: Nowadays, people also use a newer magic word called git switch just for jumping between sandboxes because it's extra easy, but git checkout is the classic old-school sneaker!)</p>
+      </article>
+      <article class="article-three">
+        <h2 class="branching-highlight">The Magic Words: Create and Switch!</h2>
+        <p class="branching-text">When you want to make your special sandbox and jump inside it, you use magic words! Here are the words we say:</p>
+<p class="branching-text">git branch (Say: Make a sandbox!) This is you pointing at the ground and saying, "I want a brand-new mini-sandbox right here!" It builds the safe space, but you aren't sitting in it just yet. git checkout or git switch (Say: Hop on in!) This is you actually crawling inside your new mini-sandbox so you can start playing with your toys there!
+So, if you want to make a sandbox called funny-hats and hop right into it, you say:
+git switch -c funny-hats (This is a fun shortcut that means: "Make the sandbox and jump right inside right now!" 🚀)
+
+Now we gona learn how to bring your toy back to main castle!
+So you played in your mini-sandbox and made the coolest toy ever! Now it is time to bring it back home.</p>
+      </article>
+      <article class="article-four">
+        <h2 class="branching-highlight">Let's learn how to merge using our toy boxes! 🧸📦</h2>
+
+        <p class="branching-text">Merging: Putting the Toys Together!</p>
+<p class="branching-text">Imagine you have two big toy boxes:
+
+The Main Toy Box (main): This is the big, cozy toy box where all the best, approved toys live. Everybody plays with these!
+Your Special Toy Box (funny-hats): This is the mini-sandbox toy box where you secretly glued a sparkly funny hat onto your teddy bear. You tested it, it didn't break, and now you want everyone in the playroom to see your teddy bear's awesome hat!
+To do this, you have to do a Merge. Merging is like taking your special toy box, walking over to the big main toy box, and saying: "Look what I made! Let's put this happy new toy right inside the big box with all the other toys!" 🧸
+The Magic Words for Merging!
+To make the magic happen, you have to follow three tiny baby steps:
+
+Hop back to the main room! (git switch main)
+First, you climb out of your mini-sandbox and walk back to the big main toy box. You have to be standing right next to the main box to open it!
+
+Say the magic word! (git merge funny-hats)
+You point at your special toy box (funny-hats) and tell Git: "Please take everything new from that box and pour it right into this big main box!"
+Git does a happy little wiggle, takes your sparkly teddy bear, and tucks it safely inside the main toy box. Yay! 🎉
+And just like that, your awesome idea is part of the big castle for everyone to play with!</p>
+      </article>
+      <article class="article-five">
+        <h2 class="branching-highlight">Uh-oh! Sometimes playtime gets a little bit tricky. 🍼👶 Let's talk about when things get messy!</h2>
+
+        <p class="branching-text">The Toy Fight: What is a Merge Conflict?</p>
+<p class="branching-text">Imagine you and your best friend, Timmy, are playing in the sandbox. You both have a copy of the exact same toy car in your separate mini-sandboxes. While sitting in your sandbox, you paint your toy car sparkly pink with glitter. 🚗At the exact same time, Timmy sits in his sandbox and paints his copy of the toy car bright green with dinosaur stickers! 🦖🚙
+Now, it is time to put your toys back into the big main toy box. You dump your pink car in, and Timmy dumps his green car in right on top of the same spot!
+
+Git looks at the two cars sitting in the exact same space and gets totally confused. Git stops, throws its little hands in the air, and starts to cry: "Beep boop! Oh no! One car is pink and one car is green! I cannot choose which one is real! Help meeee!" 😭
+That scary-sounding thing is called a Merge Conflict! It just means you and a friend tried to change the exact same toy in two different ways, and Git doesn't know what to do.
+
+How to Fix the Toy Fight!
+Don't worry, baby coder! Git isn't mean; it just needs a grown-up (that's you!) to help make a choice. Look at the mess: You open up the toy box and look at the pink car and the green car fighting over the same spot.
+
+Make a choice: You get to be the boss! You say, "Okay, let's keep the sparkly pink car, and put the green dinosaur car away." (Or you can keep both!) Tell Git it's okay: You give Git a gentle pat on the head and say, "All fixed, buddy!" Once you make your choice, Git smiles, wipes away its tears, and happily packs everything away into the big main toy box. Yay! 🎉</p>
+      </article>
+      <article class="article-six">
+        <h2 class="branching-highlight">Now is time to talk about Pull Requests!</h2>
+
+        <p class="branching-text">Imagine you drew the most amazing picture of a puppy wearing a superhero cape in your bedroom (that's your mini-sandbox branch!). 🐶 Now, you want to hang your picture on the big refrigerator in the kitchen where everybody can see it. But you can't just run in and tape it to the fridge yourself—you need to show it to the grown-up first!</p>
+
+<p class="branching-text">What is a Pull Request?</p>
+
+<p class="branching-text">A Pull Request (or a PR for short) is like sliding a note under the grown-up's door that says:
+"Hiiii! Look at this super cool superhero puppy drawing I made in my room! Please, pretty please, can you pull it into the kitchen and stick it on the big fridge?" 💌
+
+In GitHub, a Pull Request is just a polite little message card! It shows everyone your special branch with all your fun changes.
+It lets your friends look at it, point at it, and say, "Oh wow, that puppy looks so cool!" or "Wait, why does the puppy have three tails?"
+It gives everyone a chance to talk about your work before it officially joins the main castle.
+
+<p class="branching-text">The Magic Steps of a Pull Request!</p>
+
+<p class="branching-text">Draw and Save: You finish your drawing in your own room (your branch).
+Send the Note: You click a button on GitHub to send a Pull Request to the main project.
+Show and Tell: Your friends come over to look at your note. They look at your code, give you a big high-five, and click a green button that says "Merge!" On the Fridge!: Boom! Your drawing is officially part of the big main castle for the whole world to see. 🎉</p>
+      </article>
+    </main>
     <footer>Footer</footer>
   </body>
 </html>
