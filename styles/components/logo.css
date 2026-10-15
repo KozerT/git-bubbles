@@ -1,0 +1,16 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-8);
+  color: var(--color-text-main);
+  font-family: "Quicksand", system-ui, sans-serif;
+  font-weight: 600;
+  font-size: var(--font-size-24);
+  letter-spacing: -0.6px;
+  white-space: nowrap;
+}
+
+.logo__image {
+  width: var(--space-32);
+  border-radius: var(--radius-9999);
+}

@@ -99,4 +99,8 @@
   --space-80: 5rem; /* 80px  */
   --space-90: 5.625rem; /* 90px  */
   --space-96: 6rem; /* 96px */
+
+  --layout-max: 68.75rem; /* 1100px page width */
+
+  --transition-main: 160ms ease;
 }
