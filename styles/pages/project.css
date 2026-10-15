@@ -1,1 +1,150 @@
-/* styles for project page goes here */
+
+.projects-page {
+  background-color: var(--color-bg-page);
+  min-height: 80vh;
+  padding: var(--space-32) var(--space-20) var(--space-48);
+}
+
+.projects-container {
+  max-width: 28.75rem;
+  margin: 0 auto;
+  font-family: "Nunito Sans", sans-serif;
+  color: var(--color-text-main);
+}
+
+.projects-step {
+  display: inline-block;
+  background-color: var(--color-primary-tint);
+  border-radius: var(--radius-20);
+  padding: var(--space-6) var(--space-12);
+  font-size: var(--font-size-12);
+  margin-bottom: var(--space-16);
+}
+
+.projects-title {
+  font-family: "Quicksand", sans-serif;
+  font-size: var(--font-size-36);
+  margin-bottom: var(--space-16);
+}
+
+.projects-subtitle {
+  font-size: var(--font-size-18);
+  margin-bottom: var(--space-10);
+}
+
+.projects-container p {
+  font-size: var(--font-size-14);
+  line-height: 1.7;
+}
+
+.projects-container section {
+  margin-top: var(--space-24);
+}
+
+.projects-code {
+  background-color: var(--color-terminal-bg);
+  color: var(--color-terminal-text);
+  border-radius: var(--radius-4);
+  margin-top: var(--space-16);
+  overflow: hidden;
+}
+
+.projects-dots {
+  display: flex;
+  gap: var(--space-6);
+  padding: var(--space-10);
+  background-color: var(--color-terminal-bg);
+}
+
+.projects-dots span {
+  width: var(--space-10);
+  height: var(--space-10);
+  border-radius: var(--radius-9999);
+}
+
+.projects-dots span:nth-child(1) {
+  background-color: var(--color-accent-pink);
+}
+
+.projects-dots span:nth-child(2) {
+  background-color: var(--color-accent-lemon);
+}
+
+.projects-dots span:nth-child(3) {
+  background-color: var(--color-accent-mint);
+}
+
+.projects-code pre {
+  padding: var(--space-16);
+  margin: 0;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-family: "Fira Code", monospace;
+  font-size: var(--font-size-11);
+}
+
+.projects-tip {
+  display: flex;
+  align-items: center;
+  gap: var(--space-16);
+  background-color: var(--color-surface-tip);
+  border-radius: var(--radius-48);
+  padding: var(--space-20);
+  margin-top: var(--space-24);
+}
+
+.projects-tip-icon {
+  background-color: var(--color-secondary-soft);
+  border-radius: var(--radius-9999);
+  padding: var(--space-12);
+}
+
+.projects-tip-title {
+  font-size: var(--font-size-16);
+  margin: 0;
+}
+
+.projects-tip p {
+  margin: var(--space-4) 0 0;
+}
+
+.projects-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-16);
+  margin-top: var(--space-32);
+  padding-top: var(--space-16);
+  border-top: 0.0625rem solid var(--color-primary-tint);
+}
+
+.projects-next {
+  background-color: var(--color-primary);
+  color: var(--color-text-on-primary);
+  padding: var(--space-10) var(--space-20);
+  border-radius: var(--radius-9999);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.projects-next:hover {
+  background-color: var(--color-primary-hover);
+}
+
+@media (max-width: 48rem) {
+  .projects-page {
+    padding: var(--space-24) var(--space-16);
+  }
+
+  .projects-title {
+    font-size: var(--font-size-28);
+  }
+
+  .projects-subtitle {
+    font-size: var(--font-size-16);
+  }
+
+  .projects-bottom {
+    flex-wrap: wrap;
+  }
+}
