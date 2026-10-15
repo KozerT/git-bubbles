@@ -1,0 +1,12 @@
+.card {
+  padding: var(--space-32);
+  border-radius: var(--radius-48);
+  background: var(--color-surface-glass);
+  box-shadow: var(--shadow-md);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: var(--space-20);
+}

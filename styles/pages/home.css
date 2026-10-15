@@ -1,27 +1,139 @@
 /* styles for home page goes here */
 
-.header-test {
-  font-size: var(--font-size-36);
-  text-align: center;
-  font-family: "Nunito Sans", monospace;
+.home-background {
+  background-color: var(--color-bg-page);
 }
-
-.link-container-test {
+.home-container {
   display: flex;
   flex-direction: column;
+  flex: 1;
+  gap: var(--space-40);
+  margin: auto;
+  padding: var(--space-40) var(--space-32);
+  max-width: var(--layout-max);
+}
+
+.hero-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-24);
+  padding: var(--space-32) var(--space-24);
+  background-color: var(--color-surface-hero);
+  box-shadow: var(--shadow-xl);
+  border-radius: var(--radius-32);
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: var(--space-28);
+}
+
+.hero-title {
+  font-size: var(--font-size-36);
+  font-family: "Quicksand", system-ui, sans-serif;
+  font-weight: 700;
+  text-wrap: balance;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+.hero-actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-20);
+  width: 100%;
+}
+
+.hero-mascot {
+  max-width: 200px;
+  margin-inline: auto;
+  mix-blend-mode: multiply;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-20);
+  transition:
+    box-shadow var(--transition-main),
+    transform var(--transition-main);
+
+  &:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+  }
+}
+
+.feature-card__title {
+  font-size: var(--font-size-24);
+  font-family: "Quicksand", system-ui, sans-serif;
+  font-weight: 600;
+}
+
+.feature-card__text {
+  font-family: "Nunito Sans", system-ui, sans-serif;
+  font-size: var(--font-size-16);
+  text-wrap: balance;
+}
+
+.feature-card__link {
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  height: 300px;
-  border: 1px solid black;
-  border-radius: var(--radius-48);
+  gap: var(--space-8);
+  font-family: "Quicksand", system-ui, sans-serif;
+  font-size: var(--font-size-14);
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-top: auto;
+  transition:
+    color var(--transition-main),
+    translate var(--transition-main);
+
+  &:hover {
+    color: var(--color-primary-hover);
+    translate: var(--space-2);
+  }
 }
 
-.link-item-test {
-  color: blueviolet;
+.feature-card__icon {
+  width: var(--space-12);
 }
 
-.little-furry a {
-  border-radius: var(--radius-48);
-  background-color: blueviolet;
+@media (min-width: 768px) {
+  .home-container {
+    gap: var(--space-64);
+  }
+
+  .hero-card {
+    flex-direction: row;
+    border-radius: var(--radius-48);
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-44);
+    padding: var(--space-56);
+  }
+
+  .hero-content {
+    gap: var(--space-40);
+  }
+
+  .hero-title {
+    font-size: var(--font-size-52);
+    text-wrap: pretty;
+    text-align: left;
+  }
+
+  .hero-actions {
+    margin-top: var(--space-20);
+    flex-direction: row;
+    gap: var(--space-24);
+    width: auto;
+  }
+
+  .hero-mascot {
+    max-width: 320px;
+  }
 }

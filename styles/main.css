@@ -2,8 +2,10 @@
 @import "./tokens.css";
 @import "./base.css";
 
-@import "./components/logo.css";
 @import "./components/button.css";
+@import "./components/badge.css";
+@import "./components/card.css";
+@import "./components/logo.css";
 @import "./components/header.css";
 
 @import "./pages/home.css";
