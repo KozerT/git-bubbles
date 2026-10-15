@@ -1,17 +1,219 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>How to add changes to your Git repo</title>
-    <link rel="stylesheet" href="../styles/main.css" />
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Nunito+Sans:wght@300..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <header>Header</header>
-    <main>Main Content for Changes page</main>
-    <footer>Footer</footer>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to add changes to your Git repo</title>
+  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Nunito+Sans:wght@300..700&family=Quicksand:wght@300..700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>Header</header>
+
+  <main class="changes-page">
+    <article class="changes-article">
+
+      <!-- ===== INTRODUCTION  ===== -->
+      <header class="changes-intro">
+
+        <div class="changes-step-container">
+          <span class="changes-step">
+            <img class="changes-step-icon" src="../assets/images/baby_image.png" alt="" width="20" height="20" />
+            <span>Step 2: Changes</span>
+          </span>
+        </div>
+
+        <h1 class="changes-title">Adding Changes in Git</h1>
+
+        <p>
+          Imagine building something with LEGO blocks. You add new pieces,
+          change a few things, and sometimes make mistakes.
+        </p>
+
+        <p>
+          Wouldn't it be nice to remember how your creation looked before?
+          That's what Git helps us do!
+        </p>
+
+        <p>
+          Git keeps track of changes in our files and lets us save
+          different versions of our project.
+        </p>
+
+        <p>
+          Think of each <strong>commit</strong> as taking a picture of your
+          LEGO creation before making more changes. If something goes wrong,
+          we can look back at an earlier version.
+        </p>
+
+      </header>
+
+       <!-- ===== SECTION 1: CHECKING CHANGES ===== -->
+      <section class="changes-section">
+        <h2 class="changes-section-title">1. How to check our changes</h2>
+
+        <p class="changes-section-text">
+          Git status helps you see which files have changed.
+        </p>
+
+        <p class="changes-section-text">
+          This shows which files are new, modified or ready to be saved.
+        </p>
+
+        <div class="changes-terminal">
+          <div class="changes-terminal-header">
+            <span class="terminal-dot red"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot green"></span>
+          </div>
+
+          <pre><code><span class="terminal-command">git status</span>
+<span class="terminal-comment"># Example output:</span>
+<span class="terminal-output">Untracked files:</span>
+  <span class="terminal-error">drawing.svg</span>
+</code></pre>
+        </div>
+      </section>
+
+       <!-- =====  SECTION 2: ADDING CHANGES ===== -->
+      <section class="changes-section">
+        <h2 class="changes-section-title">2. How to add our changes</h2>
+
+        <p class="changes-section-text">
+          After checking our changes, we need to choose which files
+          we want Git to include in our next snapshot.
+        </p>
+
+        <p class="changes-section-text">
+          This is called staging. Think of it like choosing which
+          LEGO pieces you want to include in a photograph.
+        </p>
+
+        <div class="changes-terminal">
+          <div class="changes-terminal-header">
+            <span class="terminal-dot red"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot green"></span>
+          </div>
+
+          <pre><code><span class="terminal-comment"># Add all changes</span>
+<span class="terminal-command">git add .</span>
+
+<span class="terminal-comment"># Or add one specific file</span>
+<span class="terminal-command">git add index.html</span></code></pre>
+        </div>
+      </section>
+
+      <!-- =====  SECTION 3: COMMITTING CHANGES ===== -->
+      <section class="changes-section">
+        <h2 class="changes-section-title">3. How to save our changes</h2>
+
+        <p class="changes-section-text">
+          Once we have staged our changes, we can save them
+          by creating a commit.
+        </p>
+
+        <p class="changes-section-text">
+          Think of a commit as taking a photograph of your LEGO creation.
+          Each commit records a snapshot of your project, along with
+          a message explaining what changed.
+        </p>
+
+        <div class="changes-terminal">
+          <div class="changes-terminal-header">
+            <span class="terminal-dot red"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot green"></span>
+          </div>
+
+          <pre><code><span class="terminal-comment"># Save your staged changes with a message</span>
+<span class="terminal-command">git commit -m "Update homepage"</span></code></pre>
+        </div>
+      </section>
+
+      <!-- ===== SECTION 4: OTHER USEFUL GIT COMMANDS ===== -->
+      <section class="changes-section">
+        <h2 class="changes-section-title">4. Other useful Git commands</h2>
+
+        <p class="changes-section-text">
+          Git has a few more helpful commands that make it easier
+          to understand, share, and manage our changes.
+        </p>
+
+        <p class="changes-section-text">
+          <strong><code>git diff</code></strong> —
+          Shows the changes in your files that have not been staged yet.
+        </p>
+
+        <p class="changes-section-text">
+          <strong><code>git diff --staged</code></strong> —
+          Shows the changes you have already staged for your next commit.
+        </p>
+
+        <p class="changes-section-text">
+          <strong><code>git push</code></strong> —
+          Sends your local commits to a remote repository, such as GitHub.
+        </p>
+
+        <p class="changes-section-text">
+          <strong><code>git pull</code></strong> —
+          Gets changes from a remote repository and integrates them
+          into your current branch.
+        </p>
+
+        <p class="changes-section-text">
+          <strong><code>git log</code></strong> —
+          Shows the history of commits in your project.
+        </p>
+
+        <p class="changes-section-text">
+          <strong><code>git restore --staged index.html</code></strong> —
+          Removes index.html from the staging area without deleting
+          your changes in the file.
+        </p>
+      </section>
+
+        <!-- =====  NURSERY TIP ===== -->
+      <div class="changes-tip">
+        <span class="changes-tip-icon" aria-hidden="true">
+          <img src="../assets/images/nursery tips_bottle.png" alt="" width="20" height="28" />
+        </span>
+
+        <div class="changes-tip-content">
+          <h3>Nursery Tip:</h3>
+          <p>
+            Remember: git add prepares your changes, git commit saves
+            them locally, and git push sends your commits to GitHub.
+          </p>
+        </div>
+      </div>
+
+        <!-- ===== BOTTOM NAVIGATION ===== -->
+      <nav class="changes-bottom" aria-label="Lesson navigation">
+
+        <div class="changes-complete">
+          <img class="changes-complete-icon" src="../assets/images/done_icon_bottom_navigation.png" alt="" width="18"
+            height="18" />
+          <span>Chapter 2 Complete</span>
+        </div>
+
+        <a href="../branching/index.html" class="changes-next">
+          <span>Next: Branching</span>
+          <span aria-hidden="true">→</span>
+        </a>
+
+      </nav>
+
+    </article>
+  </main>
+
+  <footer>Footer</footer>
+</body>
+
 </html>
