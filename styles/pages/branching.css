@@ -32,7 +32,7 @@
   font-family: "Fira Code", monospace;
   color: var(--color-text-main);
 }
-.body {
+.branching-body {
   background-color: var(--color-bg-page);
   color: var(--color-text-main);
   font-size: var(--font-size-16);
