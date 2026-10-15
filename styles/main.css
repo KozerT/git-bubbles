@@ -1,9 +1,15 @@
+/* Here we keeps all our imports and this files we imports into every index.html */
 @import "./tokens.css";
 @import "./base.css";
 
-@import "./components/button.css";
 @import "./components/badge.css";
+@import "./components/button.css";
 @import "./components/cards.css";
+@import "./components/header.css";
+@import "./components/logo.css";
 
-@import "./pages/home.css";
 @import "./pages/about-us.css";
+@import "./pages/branching.css";
+@import "./pages/changes.css";
+@import "./pages/home.css";
+@import "./pages/project.css";
