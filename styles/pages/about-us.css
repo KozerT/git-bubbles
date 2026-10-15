@@ -89,10 +89,6 @@
   color: var(--color-primary);
 }
 
-.status-icon {
-  max-width: 20px;
-}
-
 .bottom-banner {
   display: flex;
   flex-wrap: wrap;
