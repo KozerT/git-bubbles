@@ -1,46 +1,74 @@
+
 .footer {
-  background-color: var(--color-primary, #447bff);
-  color: white;
-  padding: 2rem;
+  background-color: var(--color-primary);
+  color: var(--color-text-on-primary);
+  padding: var(--space-32);
   font-family: "Nunito Sans", sans-serif;
+  box-shadow: var(--shadow-bar);
 }
 
 .footer-container {
-  max-width: 75rem;
+  max-width: var(--layout-max);
   margin: 0 auto;
   text-align: center;
 }
 
 .footer-title {
   font-family: "Quicksand", sans-serif;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+  font-size: var(--font-size-24);
+  font-weight: 700;
+  margin-bottom: var(--space-16);
 }
 
 .footer-text {
-  font-size: 1rem;
-  margin-bottom: 1rem;
+  font-size: var(--font-size-16);
+  margin-bottom: var(--space-24);
 }
 
 .footer-links {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
   flex-wrap: wrap;
+  gap: var(--space-24);
 }
 
 .footer-links a {
-  color: white;
+  color: var(--color-text-on-primary);
   text-decoration: none;
+  font-size: var(--font-size-16);
+  transition: var(--transition-main);
 }
 
 .footer-links a:hover {
   text-decoration: underline;
 }
 
+.footer-links a:focus-visible {
+  outline: 0.125rem solid currentColor;
+  outline-offset: var(--space-4);
+}
+
 .footer-bottom {
-  margin-top: 2rem;
-  padding-top: 1rem;
-  border-top: 0.0625rem solid white;
-  font-size: 0.875rem;
+  margin-top: var(--space-32);
+  padding-top: var(--space-16);
+  border-top: 0.0625rem solid var(--color-primary-tint);
+  font-size: var(--font-size-14);
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+@media (max-width: 48rem) {
+  .footer {
+    padding: var(--space-24) var(--space-16);
+  }
+
+  .footer-title {
+    font-size: var(--font-size-20);
+  }
+
+  .footer-links {
+    gap: var(--space-16);
+  }
 }
