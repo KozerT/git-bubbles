@@ -20,7 +20,6 @@
 }
 
 .badge__lavender {
-  /* Here I am using relative colors, so like that we stick with our design tokens */
   background-color: rgb(from var(--color-accent-lavender) r g b / 30%);
   color: var(--color-accent-purple);
 }
