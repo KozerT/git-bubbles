@@ -1,4 +1,5 @@
-/* Here we keeps all our imports and this files we imports into every index.html */
+
+/* Import all styles used across our website */
 @import "./tokens.css";
 @import "./base.css";
 
@@ -7,6 +8,7 @@
 @import "./components/cards.css";
 @import "./components/header.css";
 @import "./components/logo.css";
+@import "./components/footer.css";
 @import './components/bottom-banner.css';
 
 @import "./pages/about-us.css";
