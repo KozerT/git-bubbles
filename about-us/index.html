@@ -13,7 +13,55 @@
     <link rel="stylesheet" href="../styles/main.css" />
   </head>
   <body>
-    <header>Header</header>
+  <header class="header">
+      <div class="header__bar">
+        <a href="../index.html" class="logo">
+          <img
+            src="../assets/images/logo.png"
+            alt="Git Bubbles baby-octocat mascot logo"
+            class="logo__image"
+            width="32"
+            height="32"
+          />
+          Git Bubbles
+        </a>
+        <button
+          class="menu-toggle"
+          type="button"
+          popovertarget="header-menu"
+          aria-controls="header-menu"
+        >
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+        </button>
+
+        <nav class="header-menu" id="header-menu" popover>
+          <!-- Important: we have a aria-current="page" here, and this is needed for our custom style work  -->
+          <a href="../index.html" class="header-menu__link">
+            home</a
+          >
+          <a href="../projects/index.html" class="header-menu__link">projects</a>
+          <a href="../changes/index.html" class="header-menu__link">changes</a>
+          <a href="../branching/index.html" class="header-menu__link"
+            >branching</a
+          >
+          <a href="../about-us/index.html" class="header-menu__link" aria-current="page">about-us</a>
+        </nav>
+
+        <nav class="header-nav">
+          <a href="../index.html" class="header-nav__link"
+          >home</a
+          >
+          <a href="../projects/index.html" class="header-nav__link">projects</a>
+          <a href="../changes/index.html" class="header-nav__link">changes</a>
+          <a href="../branching/index.html" class="header-nav__link"
+            >branching</a
+          >
+          <a href="../about-us/index.html" class="header-nav__link" aria-current="page">about us</a>
+        </nav>
+      </div>
+    </header>
     <main class="about-background">
       <div class="about-container">
         <section class="about-header">
