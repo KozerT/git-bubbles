@@ -1,0 +1,46 @@
+.footer {
+  background-color: var(--color-primary, #447bff);
+  color: white;
+  padding: 2rem;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.footer-container {
+  max-width: 75rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-title {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-text {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 0.0625rem solid white;
+  font-size: 0.875rem;
+}
