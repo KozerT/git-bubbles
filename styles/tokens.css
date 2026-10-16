@@ -42,7 +42,7 @@
   --color-terminal-header: rgb(39 49 63 / 40%);
   --color-terminal-text: #79d1fd;
   --color-terminal-output: #c6b8ff;
-  --color-terminal-error:#FB7185;
+  --color-terminal-error: #fb7185;
 
   /* ===== SHADOWS ===== */
   --shadow-xs: 0px 1px 2px 0px rgba(0, 0, 0, 0.05); /* Tags, inline code chips, tiny pills*/
@@ -63,6 +63,7 @@
   --radius-16: 16px;
   --radius-20: 20px;
   --radius-22: 22px;
+  --radius-32: 32px;
   --radius-48: 48px;
   --radius-9999: 9999px;
 
@@ -99,4 +100,9 @@
   --space-80: 5rem; /* 80px  */
   --space-90: 5.625rem; /* 90px  */
   --space-96: 6rem; /* 96px */
+
+  --layout-max: 68.75rem; /* 1100px page width */
+  --layout-article: 36rem; /* 576px */
+
+  --transition-main: 160ms ease;
 }

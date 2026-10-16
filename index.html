@@ -4,32 +4,168 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Git Bubbles!</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Nunito+Sans:wght@300..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="./styles/main.css" />
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Nunito+Sans:wght@300..700&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
   <body>
-    <header>
-      <h1 class="header-test">Main Content</h1>
+    <header class="header">
+      <div class="header__bar">
+        <a href="index.html" class="logo">
+          <img
+            src="./assets/images/logo.png"
+            alt="Git Bubbles baby-octocat mascot logo"
+            class="logo__image"
+            width="32"
+            height="32"
+          />
+          Git Bubbles
+        </a>
+        <button
+          class="menu-toggle"
+          type="button"
+          popovertarget="header-menu"
+          aria-controls="header-menu"
+        >
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+        </button>
+
+        <nav class="header-menu" id="header-menu" popover>
+          <!-- Important: we have a aria-current="page" here, and this is needed for our custom style work  -->
+          <a href="index.html" class="header-menu__link" aria-current="page">
+            home</a
+          >
+          <a href="./projects/index.html" class="header-menu__link">projects</a>
+          <a href="./changes/index.html" class="header-menu__link">changes</a>
+          <a href="./branching/index.html" class="header-menu__link"
+            >branching</a
+          >
+          <a href="./about-us/index.html" class="header-menu__link">about-us</a>
+        </nav>
+
+        <nav class="header-nav">
+          <!-- Important: we have  aria-current="page" here, and this is needed for our background style works  -->
+          <a href="index.html" class="header-nav__link" aria-current="page"
+            >home</a
+          >
+          <a href="./projects/index.html" class="header-nav__link">projects</a>
+          <a href="./changes/index.html" class="header-nav__link">changes</a>
+          <a href="./branching/index.html" class="header-nav__link"
+            >branching</a
+          >
+          <a href="./about-us/index.html" class="header-nav__link">about us</a>
+        </nav>
+      </div>
     </header>
-    <main>
-      <div class="link-container-test">
-        <div class="link-item-test">
-          <a href="./projects/index.html">project</a>
-        </div>
-        <div class="link-item-test">
-          <a href="./changes/index.html">changes</a>
-        </div>
-        <div class="link-item-test">
-          <a href="./changes/index.html">branching</a>
-        </div>
-        <div class="link-item-test">
-          <a href="./changes/index.html">about us</a>
-        </div>
-        <div class="little-furry">
-          <a href="./changes/index.html">little-furry</a>
-        </div>
+    <main class="home-background">
+      <div class="home-container">
+        <section class="hero-card">
+          <div class="hero-content">
+            <p class="badge">
+              <span aria-hidden="true">👶</span>
+              Step 0: Welcome
+            </p>
+            <h1 class="hero-title">Your first steps into Git and GitHub</h1>
+            <div class="hero-actions">
+              <a href="./projects/index.html" class="button button-primary">
+                Start crawling
+                <img
+                  src="./assets/icons/icon-arrow.svg"
+                  alt="icon arrow"
+                  width="14"
+                  height="14"
+                />
+              </a>
+              <a href="./about-us/index.html" class="button button-secondary">
+                Meet the Team
+                <img
+                  src="./assets/icons/icon-people.svg"
+                  alt="icon arrow"
+                  width="16"
+                  height="12"
+                />
+              </a>
+            </div>
+          </div>
+          <img
+            src="./assets/images/hero-mascot.png"
+            alt="Octocat mascot playing with toys"
+            width="100%"
+            height="auto"
+            class="hero-mascot"
+          />
+        </section>
+        <section class="card-grid">
+          <article class="card feature-card">
+            <p class="text-badge badge__lavender">Safe Sandbox</p>
+            <h2 class="feature-card__title">Project setup</h2>
+            <p class="feature-card__text">
+              A repository is just a home folder for your code. You can build
+              freely, try things out, and always go back if something breaks.
+            </p>
+            <a href="./projects/index.html" class="feature-card__link"
+              >Explore Chapter
+              <img
+                src="./assets/icons/icor-arrow-blue.svg"
+                alt="arrow=right-blue"
+                width="100%"
+                height="auto"
+                class="feature-card__icon"
+            /></a>
+          </article>
+
+          <article class="card feature-card">
+            <p class="text-badge badge__mint">Memory Saver</p>
+            <h2 class="feature-card__title">Saving changes</h2>
+            <p class="feature-card__text">
+              Whenever you write code, take a quick snapshot with a friendly
+              commit note so you always remember what you built.
+            </p>
+            <a href="./changes/index.html" class="feature-card__link"
+              >Explore Chapter
+              <img
+                src="./assets/icons/icor-arrow-blue.svg"
+                alt="arrow=right-blue"
+                width="100%"
+                height="auto"
+                class="feature-card__icon"
+            /></a>
+          </article>
+
+          <article class="card feature-card">
+            <p class="text-badge badge__pink">No Messes</p>
+            <h2 class="feature-card__title">Branching out</h2>
+            <p class="feature-card__text">
+              Build and test new features in separate paths so your main code
+              stays clean and working.
+            </p>
+            <a href="./branching/index.html" class="feature-card__link"
+              >Explore Chapter
+              <img
+                src="./assets/icons/icor-arrow-blue.svg"
+                alt="arrow=right-blue"
+                width="100%"
+                height="auto"
+                class="feature-card__icon"
+            /></a>
+          </article>
+        </section>
+        <section class="badge-tip">
+          <span class="badge-tip__icon">🍼</span>
+          <div>
+            <h3 class="badge-tip__title">Quick Tip:</h3>
+            <p class="badge-tip__text">
+              Never fear breaking Git. If a mistake happens, you can always undo
+              your steps.
+            </p>
+          </div>
+        </section>
       </div>
     </main>
     <footer>Footer</footer>
