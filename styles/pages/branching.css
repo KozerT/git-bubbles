@@ -6,6 +6,7 @@
   margin: 0 auto;
   padding: var(--space-20);
   max-width: 500px;
+  align-items: center;
 }
 .branching-title {
   font-size: var(--font-size-24);
